@@ -1,0 +1,39 @@
+var b_txt = '';
+
+// write the badge
+	
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image1"><a href="http://www.flickr.com/photos/29609591@N08/12344882985/"><img src="http://farm4.staticflickr.com/3785/12344882985_b1df3d961c_s.jpg" alt="A photo on Flickr" title="Rusty" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image2"><a href="http://www.flickr.com/photos/29609591@N08/12234243593/"><img src="http://farm4.staticflickr.com/3737/12234243593_7cd8c5312c_s.jpg" alt="A photo on Flickr" title="Boathouse Isle of Danna" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image3"><a href="http://www.flickr.com/photos/29609591@N08/12220237506/"><img src="http://farm8.staticflickr.com/7435/12220237506_0201bffebc_s.jpg" alt="A photo on Flickr" title="Vital Spark" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image4"><a href="http://www.flickr.com/photos/29609591@N08/12176303006/"><img src="http://farm3.staticflickr.com/2888/12176303006_2d8f6e7924_s.jpg" alt="A photo on Flickr" title="Dancin Dog" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image5"><a href="http://www.flickr.com/photos/29609591@N08/8637527812/"><img src="http://farm9.staticflickr.com/8542/8637527812_326926a060_s.jpg" alt="A photo on Flickr" title="Beech Tree Strathmore" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image6"><a href="http://www.flickr.com/photos/29609591@N08/8627629925/"><img src="http://farm9.staticflickr.com/8521/8627629925_0781c1fc87_s.jpg" alt="A photo on Flickr" title="Fowlis" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image7"><a href="http://www.flickr.com/photos/29609591@N08/8207432285/"><img src="http://farm9.staticflickr.com/8203/8207432285_b85b135b3e_s.jpg" alt="A photo on Flickr" title="Skotland" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image8"><a href="http://www.flickr.com/photos/29609591@N08/8188704520/"><img src="http://farm9.staticflickr.com/8478/8188704520_8d7b0a9536_s.jpg" alt="A photo on Flickr" title="Elgol From Tokavaig" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image9"><a href="http://www.flickr.com/photos/29609591@N08/8182862834/"><img src="http://farm9.staticflickr.com/8200/8182862834_45647ace5d_s.jpg" alt="A photo on Flickr" title="Buachaille Etive Mhor" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image10"><a href="http://www.flickr.com/photos/29609591@N08/8171984512/"><img src="http://farm9.staticflickr.com/8200/8171984512_d1a55efb7b_s.jpg" alt="A photo on Flickr" title="Forth Bridge" height="75" width="75"></a></div>';
+
+
+b_txt += '<span style="position:absolute;left:-999em;top:-999em;visibility:hidden" class="flickr_badge_beacon"><img src="http://geo.yahoo.com/p?s=792600102&t=d8ee5aa8eb8769ef675c0d40d60f0741&fl_ev=0&lang=en&intl=us" width="0" height="0" alt="" /></span>';
+
+document.write(b_txt);

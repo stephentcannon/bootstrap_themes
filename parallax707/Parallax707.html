@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://www.ortheme.com/wrap/707/ -->
+<html lang="en" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="./Parallax707_files/user_timeline.json"></script>
+		
+		<meta charset="utf-8">
+		<title>Parallax707</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link href="./Parallax707_files/css" rel="stylesheet" type="text/css">
+		<link href="http://www.ortheme.com/wrap/707/css/reset.css" rel="stylesheet">
+		<link href="http://www.ortheme.com/wrap/707/css/parallax_style_1.1.3.css" rel="stylesheet">
+		<link href="http://www.ortheme.com/wrap/707/css/bootstrap.css" rel="stylesheet">
+		<link href="http://www.ortheme.com/wrap/707/css/style.css" rel="stylesheet">
+		<link href="http://www.ortheme.com/wrap/707/css/services_slider/lean-slider.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="./Parallax707_files/grid.css">
+		<!--grid slidShow -->
+		<link rel="stylesheet" type="text/css" href="./Parallax707_files/portfolio_gallery.css">
+		<!--Portfolio Gallery -->
+		<link href="http://www.ortheme.com/wrap/707/css/font-awesome.css" rel="stylesheet">
+		<!--font-awesome for Icons -->
+		<link href="http://www.ortheme.com/wrap/707/css/jquery.classybox.css" rel="stylesheet">
+		<!--classybox LightBox-->
+		<link href="http://www.ortheme.com/wrap/707/css/elastislide.css" rel="stylesheet">
+		<!-- Gallery Section-->
+
+		<!-- Gallery Section-->
+		<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
+			<div class="rg-image-wrapper">
+				{{if itemsCount > 1}}
+					<div class="rg-image-nav">
+						<a href="#" class="rg-image-nav-prev">Previous Image</a>
+						<a href="#" class="rg-image-nav-next">Next Image</a>
+					</div>
+				{{/if}}
+				<div class="rg-image"></div>
+				<div class="rg-loading"></div>
+				<div class="rg-caption-wrapper">
+					<div class="rg-caption" style="display:none;">
+						<p></p>
+					</div>
+				</div>
+			</div>
+		</script>
+
+		<!--grid slidShow -->
+		<script id="previewTmpl" type="text/x-jquery-tmpl">
+			<div id="ib-img-preview" class="ib-preview">
+                <img src="${src}" alt="" class="ib-preview-img"/>
+                <span class="ib-preview-descr" style="display:none;">${description}</span>
+                <div class="ib-nav" style="display:none;">
+                    <span class="ib-nav-prev">Previous</span>
+                    <span class="ib-nav-next">Next</span>
+                </div>
+                <span class="ib-close" style="display:none;">Close Preview</span>
+                <div class="ib-loading-large" style="display:none;">Loading...</div>
+            </div>		
+		</script>
+		<script id="contentTmpl" type="text/x-jquery-tmpl">	
+			<div id="ib-content-preview" class="ib-content-preview">
+                <div class="ib-teaser" style="display:none;">{{html teaser}}</div>
+                <div class="ib-content-full" style="display:none;">{{html content}}</div>
+                <span class="ib-close" style="display:none;">Close Preview</span>
+            </div>
+		</script>
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+		<!--[if IE 7]>
+          <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
+          <![endif]-->
+		<!-- Fav and touch icons -->
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.ortheme.com/wrap/707/icon/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://www.ortheme.com/wrap/707/icon/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://www.ortheme.com/wrap/707/icon/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="http://www.ortheme.com/wrap/707/icon/apple-touch-icon-57-precomposed.png">
+		<link rel="shortcut icon" href="http://www.ortheme.com/wrap/707/icon/favicon.ico">
+		<style type="text/css"></style><meta name="chromesniffer" id="chromesniffer_meta" content="{&quot;GoogleFontApi&quot;:-1,&quot;jQuery&quot;:&quot;1.8.2&quot;,&quot;Modernizr&quot;:&quot;2.6.1&quot;}"><script type="text/javascript" src="chrome-extension://homgcnaoacgigpkkljjjekpignblkeae/detector.js"></script></head>
+
+		<body class="clearfix" data-spy="scroll" data-target="#navbar" data-offset="10">
+<div class="container-fluid clearfix">
+            <div class="row-fluid">
+        <div id="welcome">
+                    <div class="container-fluid clearfix" style="padding:0; overflow:hidden">
+                <div id="ib-main-wrapper" class="ib-main-wrapper kinetic-active" tabindex="0" style="height: 640px; cursor: move;">
+                            <div class="ib-main"> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/1.jpg" data-largesrc="images/grid/large/1.jpg" alt="image01"><span>Crabbed Age and Youth</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/2.jpg" data-largesrc="images/grid/large/2.jpg" alt="image02"><span>Cannot live together</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-content">
+                                <div class="ib-teaser">
+                                <h2>Welcome <span>Parallax707</span></h2>
+                            </div>
+                                <div class="ib-content-full">
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                            </div>
+                                </a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/3.jpg" data-largesrc="images/grid/large/3.jpg" alt="image03"><span>Youth is full of pleasance</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/4.jpg" data-largesrc="images/grid/large/4.jpg" alt="image04"><span>Crabbed Age and Youth</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/5.jpg" data-largesrc="images/grid/large/5.jpg" alt="image05"><span>Cannot live together</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/6.jpg" data-largesrc="images/grid/large/6.jpg" alt="image06"><span>Youth is full of pleasance</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/7.jpg" data-largesrc="images/grid/large/7.jpg" alt="image01"><span>Crabbed Age and Youth</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/8.jpg" data-largesrc="images/grid/large/8.jpg" alt="image02"><span>Cannot live together</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/9.jpg" data-largesrc="images/grid/large/9.jpg" alt="image03"><span>Youth is full of pleasance</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/10.jpg" data-largesrc="images/grid/large/10.jpg" alt="image01"><span>Crabbed Age and Youth</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/11.jpg" data-largesrc="images/grid/large/11.jpg" alt="image02"><span>Cannot live together</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-content">
+                                <div class="ib-teaser">
+                                    <h2>Parallax<span>Effect</span></h2>
+                                </div>
+                                <div class="ib-content-full">
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                                </div>
+                                </a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/12.jpg" data-largesrc="images/grid/large/12.jpg" alt="image03"><span>Youth is full of pleasance</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/13.jpg" data-largesrc="images/grid/large/13.jpg" alt="image01"><span>Crabbed Age and Youth</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/14.jpg" data-largesrc="images/grid/large/14.jpg" alt="image02"><span>Cannot live together</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/15.jpg" data-largesrc="images/grid/large/15.jpg" alt="image03"><span>Youth is full of pleasance</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/16.jpg" data-largesrc="images/grid/large/16.jpg" alt="image01"><span>Crabbed Age and Youth</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/17.jpg" data-largesrc="images/grid/large/17.jpg" alt="image02"><span>Cannot live together</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/18.jpg" data-largesrc="images/grid/large/18.jpg" alt="image03"><span>Youth is full of pleasance</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/19.jpg" data-largesrc="images/grid/large/19.jpg" alt="image01"><span>Crabbed Age and Youth</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/20.jpg" data-largesrc="images/grid/large/20.jpg" alt="image02"><span>Cannot live together</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/21.jpg" data-largesrc="images/grid/large/21.jpg" alt="image03"><span>Youth is full of pleasance</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/22.jpg" data-largesrc="images/grid/large/22.jpg" alt="image01"><span>Crabbed Age and Youth</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/23.jpg" data-largesrc="images/grid/large/23.jpg" alt="image02"><span>Cannot live together</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/24.jpg" data-largesrc="images/grid/large/24.jpg" alt="image03"><span>Youth is full of pleasance</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/25.jpg" data-largesrc="images/grid/large/25.jpg" alt="image01"><span>Crabbed Age and Youth</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/26.jpg" data-largesrc="images/grid/large/26.jpg" alt="image02"><span>Cannot live together</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/27.jpg" data-largesrc="images/grid/large/27.jpg" alt="image03"><span>Youth is full of pleasance</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/1.jpg" data-largesrc="images/grid/large/1.jpg" alt="image01"><span>Crabbed Age and Youth</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/2.jpg" data-largesrc="images/grid/large/2.jpg" alt="image02"><span>Cannot live together</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/3.jpg" data-largesrc="images/grid/large/3.jpg" alt="image03"><span>Youth is full of pleasance</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/4.jpg" data-largesrc="images/grid/large/4.jpg" alt="image01"><span>Crabbed Age and Youth</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/5.jpg" data-largesrc="images/grid/large/5.jpg" alt="image02"><span>Cannot live together</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/6.jpg" data-largesrc="images/grid/large/6.jpg" alt="image03"><span>Youth is full of pleasance</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/7.jpg" data-largesrc="images/grid/large/7.jpg" alt="image01"><span>Crabbed Age and Youth</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/8.jpg" data-largesrc="images/grid/large/8.jpg" alt="image02"><span>Cannot live together</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/9.jpg" data-largesrc="images/grid/large/9.jpg" alt="image03"><span>Youth is full of pleasance</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/10.jpg" data-largesrc="images/grid/large/10.jpg" alt="image01"><span>Crabbed Age and Youth</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/11.jpg" data-largesrc="images/grid/large/11.jpg" alt="image02"><span>Cannot live together</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/12.jpg" data-largesrc="images/grid/large/12.jpg" alt="image03"><span>Youth is full of pleasance</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/13.jpg" data-largesrc="images/grid/large/13.jpg" alt="image01"><span>Crabbed Age and Youth</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/14.jpg" data-largesrc="images/grid/large/14.jpg" alt="image02"><span>Cannot live together</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/15.jpg" data-largesrc="images/grid/large/15.jpg" alt="image03"><span>Youth is full of pleasance</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/16.jpg" data-largesrc="images/grid/large/16.jpg" alt="image01"><span>Crabbed Age and Youth</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/17.jpg" data-largesrc="images/grid/large/17.jpg" alt="image02"><span>Cannot live together</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/18.jpg" data-largesrc="images/grid/large/18.jpg" alt="image03"><span>Youth is full of pleasance</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/19.jpg" data-largesrc="images/grid/large/19.jpg" alt="image01"><span>Crabbed Age and Youth</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/20.jpg" data-largesrc="images/grid/large/20.jpg" alt="image02"><span>Cannot live together</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/21.jpg" data-largesrc="images/grid/large/21.jpg" alt="image03"><span>Youth is full of pleasance</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/22.jpg" data-largesrc="images/grid/large/22.jpg" alt="image01"><span>Crabbed Age and Youth</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/23.jpg" data-largesrc="images/grid/large/23.jpg" alt="image02"><span>Cannot live together</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/24.jpg" data-largesrc="images/grid/large/24.jpg" alt="image03"><span>Youth is full of pleasance</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/25.jpg" data-largesrc="images/grid/large/25.jpg" alt="image02"><span>Cannot live together</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/26.jpg" data-largesrc="images/grid/large/26.jpg" alt="image03"><span>Youth is full of pleasance</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/27.jpg" data-largesrc="images/grid/large/27.jpg" alt="image01"><span>Crabbed Age and Youth</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/1.jpg" data-largesrc="images/grid/large/1.jpg" alt="image02"><span>Cannot live together</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/2.jpg" data-largesrc="images/grid/large/2.jpg" alt="image03"><span>Youth is full of pleasance</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/3.jpg" data-largesrc="images/grid/large/3.jpg" alt="image01"><span>Crabbed Age and Youth</span></a> <a href="http://www.ortheme.com/wrap/707/#" class="ib-image"><img src="./Parallax707_files/4.jpg" data-largesrc="images/grid/large/4.jpg" alt="image02"><span>Cannot live together</span></a>
+                        <div class="clr"></div>
+                    </div>
+                            <!-- ib-main --> 
+                        </div>
+                <!-- ib-main-wrapper --> 
+            </div>
+                </div>
+        <div id="navbar-sticky-wrapper" class="my-wrapper"><div id="navbar" class="navbar navbar-static-top">
+                    <div class="navbar-inner">
+                <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a class="brand" href="http://www.ortheme.com/wrap/707/index.html">Parallax<span>707</span> </a>
+                            <div class="nav-collapse collapse pull-right">
+                        <ul class="nav">
+                                    <li class="dropdown active"> <a href="http://www.ortheme.com/wrap/707/#" class="dropdown-toggle" data-toggle="dropdown">Home <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                            <li class="active"> <a href="http://www.ortheme.com/wrap/707/#welcome">Home Style 1</a> </li>
+                                            <li> <a href="http://www.ortheme.com/wrap/707/3d_slider.html">Home Style 2</a> </li>
+                                            <li> <a href="http://www.ortheme.com/wrap/707/layer_slider.html">Home Style 3</a> </li>
+                                            <li> <a href="http://www.ortheme.com/wrap/707/nivo_slider.html">Home Style 4</a> </li>
+                                            <li> <a href="http://www.ortheme.com/wrap/707/parallax_slider.html">Home Style 5</a> </li>
+                                            <li> <a href="http://www.ortheme.com/wrap/707/portfolio_slider.html">Home Style 6</a> </li>
+                                        </ul>
+                            </li>
+                                    <li> <a href="http://www.ortheme.com/wrap/707/#About">About</a> </li>
+                                    <li> <a href="http://www.ortheme.com/wrap/707/#Services">Services</a> </li>
+                                    <li> <a href="http://www.ortheme.com/wrap/707/#Portfolio">Portfolio</a> </li>
+                                    <li> <a href="http://www.ortheme.com/wrap/707/#LargeSlider">Gallery</a> </li>
+                                    <li> <a href="http://www.ortheme.com/wrap/707/#Contact">Contact</a> </li>
+                                    <li class="dropdown"> <a href="http://www.ortheme.com/wrap/707/#" class="dropdown-toggle" data-toggle="dropdown"> External Pages <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                            <li><a href="http://www.ortheme.com/wrap/707/about_us.html">About Us</a></li>
+                                            <li><a href="http://www.ortheme.com/wrap/707/our_services.html">Our Services</a></li>
+                                            <li><a href="http://www.ortheme.com/wrap/707/portfolio_page.html">Our Portfolio</a></li>
+                                            <li><a href="http://www.ortheme.com/wrap/707/gallery.html">Gallery</a></li>
+                                            <li><a href="http://www.ortheme.com/wrap/707/pricing.html">Pricing Tables</a></li>
+                                            <li><a href="http://www.ortheme.com/wrap/707/icons.html">Icons</a></li>
+                                            <li><a href="http://www.ortheme.com/wrap/707/time_line.html">Timeline</a></li>
+                                        </ul>
+                            </li>
+                                </ul>
+                    </div>
+                            <!--/.nav-collapse --> 
+                        </div>
+            </div>
+                </div></div>
+        <div id="About">
+                    <div class="container-fluid clearfix About">
+                <div class="container clearfix">
+                            <div class="container clearfix TitleSection">
+                        <header class="page-head">
+                                    <h1>About Us <small>// AND WHAT MAKES IT UNIQUE</small></h1>
+                                </header>
+                    </div>
+                            <div class="container clearfix">
+                        <div class="span12">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh erat,
+                                sagittis sit amet congue at, aliquam eu libero. Integer molestie, turpis
+                                vel ultrices facilisis, nisi mauris sollicitudin mauris. aliquam eu libero. Integer molestie, turpis
+                                vel ultrices facilisis, nisi mauris sollicitudin mauris.</p>
+                                </div>
+                        <div class="span12">
+                                    <div class="span4">
+                                <div class="Team clearfix">
+                                            <div class="img-thumb-container">
+                                        <div class="img-thumb"> <span><img src="./Parallax707_files/1(1).jpg" alt="About photos"></span>
+                                                    <div style="display: none;" class="overlay-wrp">
+                                                <div class="overlay"></div>
+                                                <ul style="top: 36px;" class="social-icons overlay-content">
+                                                            <li><a href="http://www.ortheme.com/wrap/707/#"><i class="icon-facebook"></i></a></li>
+                                                            <li><a href="http://www.ortheme.com/wrap/707/#"><i class="icon-twitter"></i></a></li>
+                                                            <li><a href="http://www.ortheme.com/wrap/707/#"><i class="icon-linkedin"></i></a></li>
+                                                            <li><a href="http://www.ortheme.com/wrap/707/#"><i class="icon-pinterest"></i></a></li>
+                                                        </ul>
+                                            </div>
+                                                </div>
+                                    </div>
+                                            <h2>John Doe</h2>
+                                            <h3>Creative Director</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh erat,
+                                        sagittis sit amet congue at, aliquam eu libero. Integer molestie, turpis
+                                        vel ultrices facilisis, nisi mauris sollicitudin mauris.</p>
+                                        </div>
+                            </div>
+                                    <div class="span4">
+                                <div class="Team clearfix">
+                                            <div class="img-thumb-container">
+                                        <div class="img-thumb"> <span><img src="./Parallax707_files/2(1).jpg" alt="about photos"></span>
+                                                    <div style="display: none;" class="overlay-wrp">
+                                                <div class="overlay"></div>
+                                                <ul style="top: 36px;" class="social-icons overlay-content">
+                                                            <li><a href="http://www.ortheme.com/wrap/707/#"><i class="icon-facebook"></i></a></li>
+                                                            <li><a href="http://www.ortheme.com/wrap/707/#"><i class="icon-twitter"></i></a></li>
+                                                            <li><a href="http://www.ortheme.com/wrap/707/#"><i class="icon-linkedin"></i></a></li>
+                                                            <li><a href="http://www.ortheme.com/wrap/707/#"><i class="icon-pinterest"></i></a></li>
+                                                        </ul>
+                                            </div>
+                                                </div>
+                                    </div>
+                                            <h2>John Doe</h2>
+                                            <h3>Art-Director</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh erat,
+                                        sagittis sit amet congue at, aliquam eu libero. Integer molestie, turpis
+                                        vel ultrices facilisis, nisi mauris sollicitudin mauris.</p>
+                                        </div>
+                            </div>
+                                    <div class="span4">
+                                <div class="Team clearfix">
+                                            <div class="img-thumb-container">
+                                        <div class="img-thumb"> <span><img src="./Parallax707_files/3(1).jpg" alt="About photos"></span>
+                                                    <div style="display: none;" class="overlay-wrp">
+                                                <div class="overlay"></div>
+                                                <ul style="top: 36px;" class="social-icons overlay-content">
+                                                            <li><a href="http://www.ortheme.com/wrap/707/#"><i class="icon-facebook"></i></a></li>
+                                                            <li><a href="http://www.ortheme.com/wrap/707/#"><i class="icon-twitter"></i></a></li>
+                                                            <li><a href="http://www.ortheme.com/wrap/707/#"><i class="icon-linkedin"></i></a></li>
+                                                            <li><a href="http://www.ortheme.com/wrap/707/#"><i class="icon-pinterest"></i></a></li>
+                                                        </ul>
+                                            </div>
+                                                </div>
+                                    </div>
+                                            <h2>John Doe</h2>
+                                            <h3>Chief Executive Officer</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh erat,
+                                        sagittis sit amet congue at, aliquam eu libero. Integer molestie, turpis
+                                        vel ultrices facilisis, nisi mauris sollicitudin mauris.</p>
+                                        </div>
+                            </div>
+                                </div>
+                    </div>
+                        </div>
+            </div>
+                </div>
+        <!--#About-->
+        <div id="intro" class="Parallax">
+                    <div class="ParallaxText">
+                <h2>WORD <span>OF</span> THE <span>WISE</span></h2>
+                <div class="clearfix"></div>
+                <blockquote>A man must be big enough to admit his mistakes, smart enough to profit
+                            from them, and strong enough to correct them.</blockquote>
+                <div class="clearfix"></div>
+                <p>- Jason Adams -</p>
+            </div>
+                </div>
+        <!--#intro-->
+        <div id="Services">
+                    <div class="container-fluid clearfix Services">
+                <div class="container clearfix TitleSection">
+                            <header class="page-head">
+                        <h1>Our Services <small>// What We Do</small></h1>
+                    </header>
+                        </div>
+                <div class="container clearfix">
+                            <div class="span12">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh erat,
+                                    sagittis sit amet congue at, aliquam eu libero. Integer molestie, turpis
+                                    vel ultrices facilisis, nisi mauris sollicitudin mauris.</p>
+                    </div>
+                            <div class="row-fluid">
+                        <ul id="sti-menu" class="sti-menu clearfix">
+                                    <li class="span3 clearfix" data-hovercolor="#49110D"> <a href="http://www.ortheme.com/wrap/707/#">
+                                        <h2 data-type="mText" class="sti-item">Wordpress Development</h2>
+                                        <h3 data-type="sText" class="sti-item">Understanding visually</h3>
+                                        <span data-type="icon" class="sti-icon sti-icon-care sti-item"></span> </a> </li>
+                                    <li class="span3 clearfix" data-hovercolor="#49110D"> <a href="http://www.ortheme.com/wrap/707/#">
+                                        <h2 data-type="mText" class="sti-item">Sophisticated Team</h2>
+                                        <h3 data-type="sText" class="sti-item">Professionals in action</h3>
+                                        <span data-type="icon" class="sti-icon sti-icon-alternative sti-item"></span> </a> </li>
+                                    <li class="span3 clearfix" data-hovercolor="#49110D"> <a href="http://www.ortheme.com/wrap/707/#">
+                                        <h2 data-type="mText" class="sti-item">Web Site Design</h2>
+                                        <h3 data-type="sText" class="sti-item">Personalized to your needs</h3>
+                                        <span data-type="icon" class="sti-icon sti-icon-info sti-item"></span> </a> </li>
+                                    <li class="span3 clearfix" data-hovercolor="#49110D"> <a href="http://www.ortheme.com/wrap/707/#">
+                                        <h2 data-type="mText" class="sti-item">Web Development</h2>
+                                        <h3 data-type="sText" class="sti-item">Advanced use of technology</h3>
+                                        <span data-type="icon" class="sti-icon sti-icon-family sti-item"></span> </a> </li>
+                                    <li class="span3 clearfix" data-hovercolor="#49110D" style="margin-left:0;"> <a href="http://www.ortheme.com/wrap/707/#">
+                                        <h2 data-type="mText" class="sti-item">Corporate Identity</h2>
+                                        <h3 data-type="sText" class="sti-item">Lorem ipsum dolor</h3>
+                                        <span data-type="icon" class="sti-icon sti-icon-globe sti-item"></span> </a> </li>
+                                    <li class="span3 clearfix" data-hovercolor="#49110D"> <a href="http://www.ortheme.com/wrap/707/#">
+                                        <h2 data-type="mText" class="sti-item">Brand Creation</h2>
+                                        <h3 data-type="sText" class="sti-item">24/7 for you needs</h3>
+                                        <span data-type="icon" class="sti-icon sti-icon-brand sti-item"></span> </a> </li>
+                                    <li class="span3 clearfix" data-hovercolor="#49110D"> <a href="http://www.ortheme.com/wrap/707/#">
+                                        <h2 data-type="mText" class="sti-item">Corporate Identity</h2>
+                                        <h3 data-type="sText" class="sti-item">Lorem ipsum dolor</h3>
+                                        <span data-type="icon" class="sti-icon sti-icon-identity sti-item"></span> </a> </li>
+                                    <li class="span3 clearfix" data-hovercolor="#49110D"> <a href="http://www.ortheme.com/wrap/707/#">
+                                        <h2 data-type="mText" class="sti-item">Web Development</h2>
+                                        <h3 data-type="sText" class="sti-item">Advanced use of technology</h3>
+                                        <span data-type="icon" class="sti-icon sti-icon-family sti-item"></span> </a> </li>
+                                </ul>
+                    </div>
+                        </div>
+                <div class="container clearfix TitleSection">
+                            <header class="page-head">
+                        <h1>We Make Our <small>// Clients Happy</small></h1>
+                    </header>
+                        </div>
+                <div class="container clearfix">
+                            <div class="span12">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh erat,
+                                    sagittis sit amet congue at, aliquam eu libero. Integer molestie, turpis
+                                    vel ultrices facilisis, nisi mauris sollicitudin mauris.</p>
+                    </div>
+                            <div class="row-fluid">
+                        <div class="span12">
+                                    <div class="slider-wrapper">
+                                <div id="slider" class="lean-slider">
+                                            <div class="slide1 lean-slider-slide"> <img src="./Parallax707_files/1(2).jpg" alt=""> </div>
+                                            <div class="slide2 lean-slider-slide"> <img src="./Parallax707_files/2(2).jpg" alt=""> </div>
+                                            <div class="slide3 lean-slider-slide"> <img src="./Parallax707_files/3(2).jpg" alt=""> </div>
+                                            <div class="slide4 lean-slider-slide"> <img src="./Parallax707_files/4(1).jpg" alt=""> </div>
+                                            <div class="slide5 lean-slider-slide current"> <img src="./Parallax707_files/5(1).jpg" alt=""> </div>
+                                            <div class="slide6 lean-slider-slide"> <img src="./Parallax707_files/6(1).jpg" alt=""> </div>
+                                            <div class="slide7 lean-slider-slide"> <img src="./Parallax707_files/7(1).jpg" alt=""> </div>
+                                        </div>
+                                <div id="slider-direction-nav"><a href="http://www.ortheme.com/wrap/707/#" class="lean-slider-prev">Prev</a><a href="http://www.ortheme.com/wrap/707/#" class="lean-slider-next">Next</a></div>
+                                <div id="slider-control-nav"><a href="http://www.ortheme.com/wrap/707/#" class="lean-slider-control-nav">1</a><a href="http://www.ortheme.com/wrap/707/#" class="lean-slider-control-nav">2</a><a href="http://www.ortheme.com/wrap/707/#" class="lean-slider-control-nav">3</a><a href="http://www.ortheme.com/wrap/707/#" class="lean-slider-control-nav">4</a><a href="http://www.ortheme.com/wrap/707/#" class="lean-slider-control-nav active">5</a><a href="http://www.ortheme.com/wrap/707/#" class="lean-slider-control-nav">6</a><a href="http://www.ortheme.com/wrap/707/#" class="lean-slider-control-nav">7</a></div>
+                            </div>
+                                </div>
+                    </div>
+                            <div class="container clearfix TitleSection">
+                        <header class="page-head">
+                                    <h1>Pricing <small>// Tables</small></h1>
+                                </header>
+                    </div>
+                            <div class="row-fluid">
+                        <div class="span12">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh erat,
+                                sagittis sit amet congue at, aliquam eu libero. Integer molestie, turpis
+                                vel ultrices facilisis, nisi mauris sollicitudin mauris.</p>
+                                </div>
+                    </div>
+                            <div class="row-fluid">
+                        <div class="span4">
+                                    <div class="well PricingTables Standard">
+                                <h2>Standard</h2>
+                                <h3>$15.99 / month</h3>
+                                <p><span class="label">POPULAR</span> </p>
+                                <ul>
+                                            <li><i class="icon-ok-sign"></i>10 users</li>
+                                            <li><i class="icon-ok-sign"></i>5TB of space</li>
+                                            <li><i class="icon-ok-sign"></i>About Us</li>
+                                            <li><i class="icon-ok-sign"></i>News Archive</li>
+                                            <li><i class="icon-ok-sign"></i>Our Service</li>
+                                            <li><i class="icon-ok-sign"></i>Our Team</li>
+                                            <li><i class="icon-ok-sign"></i>Clients Testimonials</li>
+                                            <li><i class="icon-ok-sign"></i>Job Opportunities</li>
+                                            <li><i class="icon-ok-sign"></i>F.A.Q</li>
+                                        </ul>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p> <a class="btn btn-large" href="http://www.ortheme.com/wrap/707/#"><i class="icon-ok icon-white"></i> Select plan</a> </p>
+                            </div>
+                                </div>
+                        <div class="span4">
+                                    <div class="well PricingTables Professional">
+                                <h2>Professional</h2>
+                                <h3>$10.99 / month</h3>
+                                <p><span class="label label-success">POPULAR</span> </p>
+                                <ul>
+                                            <li><i class="icon-ok-sign"></i>10 users</li>
+                                            <li><i class="icon-ok-sign"></i>5TB of space</li>
+                                            <li><i class="icon-ok-sign"></i>About Us</li>
+                                            <li><i class="icon-ok-sign"></i>News Archive</li>
+                                            <li><i class="icon-ok-sign"></i>Our Service</li>
+                                            <li><i class="icon-ok-sign"></i>Our Team</li>
+                                            <li><i class="icon-ok-sign"></i>Clients Testimonials</li>
+                                            <li><i class="icon-ok-sign"></i>Job Opportunities</li>
+                                            <li><i class="icon-ok-sign"></i>F.A.Q</li>
+                                        </ul>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p> <a class="btn btn-success btn-large" href="http://www.ortheme.com/wrap/707/#"><i class="icon-ok icon-white"></i> Select plan</a> </p>
+                            </div>
+                                </div>
+                        <div class="span4">
+                                    <div class="well PricingTables Premium">
+                                <h2>Premium</h2>
+                                <h3>$8.99 / month</h3>
+                                <p><span class="label label-info">BUDGET</span> </p>
+                                <ul>
+                                            <li><i class="icon-ok-sign"></i>10 users</li>
+                                            <li><i class="icon-ok-sign"></i>5TB of space</li>
+                                            <li><i class="icon-ok-sign"></i>About Us</li>
+                                            <li><i class="icon-ok-sign"></i>News Archive</li>
+                                            <li><i class="icon-ok-sign"></i>Our Service</li>
+                                            <li><i class="icon-ok-sign"></i>Our Team</li>
+                                            <li><i class="icon-ok-sign"></i>Clients Testimonials</li>
+                                            <li><i class="icon-ok-sign"></i>Job Opportunities</li>
+                                            <li><i class="icon-ok-sign"></i>F.A.Q</li>
+                                        </ul>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p> <a class="btn btn-large" href="http://www.ortheme.com/wrap/707/#"><i class="icon-ok icon-white"></i> Select plan</a> </p>
+                            </div>
+                                </div>
+                    </div>
+                        </div>
+            </div>
+                </div>
+        <!--#Services-->
+        <div id="second" class="Parallax">
+                    <div class="ParallaxText">
+                <h2>WORD <span>OF</span> THE <span>WISE</span></h2>
+                <div class="clearfix"></div>
+                <blockquote>A man must be big enough to admit his mistakes, smart enough to profit
+                            from them, and strong enough to correct them.</blockquote>
+                <div class="clearfix"></div>
+                <p>- Jason Adams -</p>
+            </div>
+                </div>
+        <!--#second-->
+        <div id="Portfolio">
+                    <div class="container-fluid clearfix Portfolio">
+                <div class="container clearfix TitleSection">
+                            <header class="page-head">
+                        <h1>Our Portfolio <small>// Lorem ipsum dolor</small></h1>
+                    </header>
+                        </div>
+                <div class="container clearfix">
+                            <div class="row-fluid">
+                        <div class="span12">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh erat,
+                                sagittis sit amet congue at, aliquam eu libero. Integer molestie, turpis
+                                vel ultrices facilisis, nisi mauris sollicitudin mauris.</p>
+                                </div>
+                    </div>
+                        </div>
+                <div class="container clearfix">
+                            <div class="row-fluid">
+                        <div class="span12"> 
+                                    
+                                    <!-- Portfolio 4 Column start -->
+                                    <div class="image_grid portfolio_4col lightbox">
+                                <ul id="list" class="portfolio_list da-thumbs clearfix">
+                                            <li class="span3">
+                                        <div> <img src="./Parallax707_files/portfolio1.jpg" alt="img">
+                                                    <article class="da-animate da-slideFromRight" style="display: block;">
+                                                <h3>Lorem ipsum dolor</h3>
+                                                <em>Lorem ipsum </em> <span class="link_post"><a href="http://www.ortheme.com/wrap/707/#"></a></span> <span class="zoom"><a href="http://www.ortheme.com/wrap/707/images/portfolio/big/portfolio1.jpg"></a> </span> </article>
+                                                </div>
+                                    </li>
+                                            <li class="span3"> <img src="./Parallax707_files/portfolio2.jpg" alt="img">
+                                        <article class="da-animate da-slideFromTop" style="display: block;">
+                                                    <h3>Lorem ipsum dolor</h3>
+                                                    <em>Lorem ipsum </em> <span class="link_post"><a href="http://www.ortheme.com/wrap/707/#"></a></span> <span class="zoom"><a href="http://www.ortheme.com/wrap/707/images/portfolio/big/portfolio2.jpg"></a></span> </article>
+                                    </li>
+                                            <li class="span3"> <img src="./Parallax707_files/portfolio3.jpg" alt="img">
+                                        <article class="da-animate da-slideFromLeft" style="display: block;">
+                                                    <h3>Lorem ipsum dolor</h3>
+                                                    <em>Lorem ipsum </em> <span class="link_post"><a href="http://www.ortheme.com/wrap/707/#"></a></span> <span class="zoom"><a href="http://www.ortheme.com/wrap/707/images/portfolio/big/portfolio3.jpg"></a></span> </article>
+                                    </li>
+                                            <li class="span3"> <img src="./Parallax707_files/portfolio4.jpg" alt="img">
+                                        <article class="da-animate da-slideFromRight" style="display: block;">
+                                                    <h3>Lorem ipsum dolor</h3>
+                                                    <em>Lorem ipsum </em> <span class="link_post"><a href="http://www.ortheme.com/wrap/707/#"></a></span> <span class="zoom"><a href="http://www.ortheme.com/wrap/707/images/portfolio/big/portfolio4.jpg"></a></span> </article>
+                                    </li>
+                                            <li class="span3" style="margin-left:0"> <img src="./Parallax707_files/portfolio5.jpg" alt="img">
+                                        <article class="da-animate da-slideFromRight" style="display: block;">
+                                                    <h3>Lorem ipsum dolor</h3>
+                                                    <em>Lorem ipsum </em> <span class="link_post"><a href="http://www.ortheme.com/wrap/707/#"></a></span> <span class="zoom"><a href="http://www.ortheme.com/wrap/707/images/portfolio/big/portfolio5.jpg"></a></span> </article>
+                                    </li>
+                                            <li class="span3"> <img src="./Parallax707_files/portfolio6.jpg" alt="img">
+                                        <article class="da-animate da-slideFromTop" style="display: block;">
+                                                    <h3>Lorem ipsum dolor</h3>
+                                                    <em>Lorem ipsum </em> <span class="link_post"><a href="http://www.ortheme.com/wrap/707/#"></a></span> <span class="zoom"><a href="http://www.ortheme.com/wrap/707/images/portfolio/big/portfolio6.jpg"></a></span> </article>
+                                    </li>
+                                            <li class="span3"> <img src="./Parallax707_files/portfolio7.jpg" alt="img">
+                                        <article class="da-animate da-slideFromLeft" style="display: block;">
+                                                    <h3>Lorem ipsum dolor</h3>
+                                                    <em>Lorem ipsum </em> <span class="link_post"><a href="http://www.ortheme.com/wrap/707/#"></a></span> <span class="zoom"><a href="http://www.ortheme.com/wrap/707/images/portfolio/big/portfolio7.jpg"></a></span> </article>
+                                    </li>
+                                            <li class="span3"> <img src="./Parallax707_files/portfolio8.jpg" alt="img">
+                                        <article class="da-animate da-slideFromRight" style="display: block;">
+                                                    <h3>Lorem ipsum dolor</h3>
+                                                    <em>Lorem ipsum </em> <span class="link_post"><a href="http://www.ortheme.com/wrap/707/#"></a></span> <span class="zoom"><a href="http://www.ortheme.com/wrap/707/images/portfolio/big/portfolio8.jpg"></a></span> </article>
+                                    </li>
+                                            <li class="span3" style="margin-left:0"> <img src="./Parallax707_files/portfolio9.jpg" alt="img">
+                                        <article class="da-animate da-slideFromRight" style="display: block;">
+                                                    <h3>Lorem ipsum dolor</h3>
+                                                    <em>Lorem ipsum </em> <span class="link_post"><a href="http://www.ortheme.com/wrap/707/#"></a></span> <span class="zoom"><a href="http://www.ortheme.com/wrap/707/images/portfolio/big/portfolio9.jpg"></a></span> </article>
+                                    </li>
+                                            <li class="span3"> <img src="./Parallax707_files/portfolio10.jpg" alt="img">
+                                        <article class="da-animate da-slideFromTop" style="display: block;">
+                                                    <h3>Lorem ipsum dolor</h3>
+                                                    <em>Lorem ipsum </em> <span class="link_post"><a href="http://www.ortheme.com/wrap/707/#"></a></span> <span class="zoom"><a href="http://www.ortheme.com/wrap/707/images/portfolio/big/portfolio10.jpg"></a></span> </article>
+                                    </li>
+                                            <li class="span3"> <img src="./Parallax707_files/portfolio11.jpg" alt="img">
+                                        <article class="da-animate da-slideFromLeft" style="display: block;">
+                                                    <h3>Lorem ipsum dolor</h3>
+                                                    <em>Lorem ipsum </em> <span class="link_post"><a href="http://www.ortheme.com/wrap/707/#"></a></span> <span class="zoom"><a href="http://www.ortheme.com/wrap/707/images/portfolio/big/portfolio11.jpg"></a></span> </article>
+                                    </li>
+                                            <li class="span3"> <img src="./Parallax707_files/portfolio12.jpg" alt="img">
+                                        <article class="da-animate da-slideFromRight" style="display: block;">
+                                                    <h3>Lorem ipsum dolor</h3>
+                                                    <em>Lorem ipsum </em> <span class="link_post"><a href="http://www.ortheme.com/wrap/707/#"></a></span> <span class="zoom"><a href="http://www.ortheme.com/wrap/707/images/portfolio/big/portfolio12.jpg"></a></span> </article>
+                                    </li>
+                                        </ul>
+                            </div>
+                                    <!-- Portfolio 4 Column End --> 
+                                    
+                                </div>
+                    </div>
+                        </div>
+            </div>
+                </div>
+        <!--#Portfolio-->
+        <div id="third" class="Parallax">
+                    <div class="container clearfix TitleSection">
+                <header class="page-head">
+                            <h1>Our Clients </h1>
+                        </header>
+                <div class="row-fluid">
+                            <div class="span12"> 
+                        
+                        <!-- Elastislide Carousel -->
+                        <div id="carousel" class="clients-wrapper">
+                                    <div class="client-carousel">
+                                <ul style="width: 3460px; display: block; margin-left: 0px;">
+                                            <li style="margin-right: 20px; width: 118px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 4px;"><img src="./Parallax707_files/1.png" alt="image01"></a></li>
+                                            <li style="margin-right: 20px; width: 118px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 4px;"><img src="./Parallax707_files/2.png" alt="image02"></a></li>
+                                            <li style="margin-right: 20px; width: 118px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 4px;"><img src="./Parallax707_files/3.png" alt="image03"></a></li>
+                                            <li style="margin-right: 20px; width: 118px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 4px;"><img src="./Parallax707_files/4.png" alt="image04"></a></li>
+                                            <li style="margin-right: 20px; width: 118px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 4px;"><img src="./Parallax707_files/5.png" alt="image05"></a></li>
+                                            <li style="margin-right: 20px; width: 118px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 4px;"><img src="./Parallax707_files/6.png" alt="image06"></a></li>
+                                            <li style="margin-right: 20px; width: 118px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 4px;"><img src="./Parallax707_files/7.png" alt="image07"></a></li>
+                                            <li style="margin-right: 20px; width: 118px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 4px;"><img src="./Parallax707_files/8.png" alt="image08"></a></li>
+                                            <li style="margin-right: 20px; width: 118px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 4px;"><img src="./Parallax707_files/9.png" alt="image09"></a></li>
+                                            <li style="margin-right: 20px; width: 118px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 4px;"><img src="./Parallax707_files/10.png" alt="image10"></a></li>
+                                            <li style="margin-right: 20px; width: 118px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 4px;"><img src="./Parallax707_files/11.png" alt="image11"></a></li>
+                                            <li style="margin-right: 20px; width: 118px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 4px;"><img src="./Parallax707_files/12.png" alt="image12"></a></li>
+                                            <li style="margin-right: 20px; width: 118px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 4px;"><img src="./Parallax707_files/13.png" alt="image13"></a></li>
+                                            <li style="margin-right: 20px; width: 118px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 4px;"><img src="./Parallax707_files/14.png" alt="image14"></a></li>
+                                            <li style="margin-right: 20px; width: 118px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 4px;"><img src="./Parallax707_files/15.png" alt="image15"></a></li>
+                                            <li style="margin-right: 20px; width: 118px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 4px;"><img src="./Parallax707_files/16.png" alt="image16"></a></li>
+                                            <li style="margin-right: 20px; width: 118px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 4px;"><img src="./Parallax707_files/17.png" alt="image17"></a></li>
+                                            <li style="margin-right: 20px; width: 118px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 4px;"><img src="./Parallax707_files/18.png" alt="image18"></a></li>
+                                            <li style="margin-right: 20px; width: 118px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 4px;"><img src="./Parallax707_files/19.png" alt="image19"></a></li>
+                                            <li style="margin-right: 20px; width: 118px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 4px;"><img src="./Parallax707_files/20.png" alt="image20"></a></li>
+                                            <li style="margin-right: 20px; width: 118px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 4px;"><img src="./Parallax707_files/21.png" alt="image21"></a></li>
+                                            <li style="margin-right: 20px; width: 118px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 4px;"><img src="./Parallax707_files/22.png" alt="image22"></a></li>
+                                            <li style="margin-right: 20px; width: 118px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 4px;"><img src="./Parallax707_files/23.png" alt="image23"></a></li>
+                                            <li style="margin-right: 20px; width: 118px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 4px;"><img src="./Parallax707_files/24.png" alt="image24"></a></li>
+                                            <li style="margin-right: 20px; width: 118px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 4px;"><img src="./Parallax707_files/25.png" alt="image25"></a></li>
+                                        </ul>
+                            </div>
+                                <div class="es-nav"><span class="es-nav-prev" style="display: none;">Previous</span><span class="es-nav-next">Next</span></div></div>
+                        <!-- End Elastislide Carousel --> 
+                        
+                    </div>
+                        </div>
+            </div>
+                </div>
+        <!--#third-->
+        <div id="LargeSlider">
+                    <div class="container-fluid clearfix LargeSlider">
+                <div class="container clearfix TitleSection">
+                            <header class="page-head">
+                        <h1>Gallery <small>// Lorem ipsum dolor</small></h1>
+                    </header>
+                        </div>
+                <div class="container clearfix">
+                            <div class="row-fluid">
+                        <div class="span12">
+                                    <div id="rg-gallery" class="rg-gallery"><div class="rg-view"><a href="http://www.ortheme.com/wrap/707/#" class="rg-view-full"></a><a href="http://www.ortheme.com/wrap/707/#" class="rg-view-thumbs rg-view-selected"></a></div>
+                                <div class="rg-thumbs"> 
+                                            <!-- Elastislide Carousel Thumbnail Viewer -->
+                                            <div class="es-carousel-wrapper">
+                                        <div class="es-nav"> <span class="es-nav-prev">Previous</span> <span class="es-nav-next">Next</span> </div>
+                                        <div class="es-carousel">
+                                                    <ul style="width: 1738px; display: block; margin-left: 0px;">
+                                                <li style="margin-right: 3px; width: 69px;" class="selected"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 2px;"><img src="./Parallax707_files/1(3).jpg" data-large="images/gallery_img/1.jpg" alt="image01" data-description="From off a hill whose concave womb reworded"></a></li>
+                                                <li style="margin-right: 3px; width: 69px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 2px;"><img src="./Parallax707_files/2(3).jpg" data-large="images/gallery_img/2.jpg" alt="image02" data-description="A plaintful story from a sistering vale"></a></li>
+                                                <li style="margin-right: 3px; width: 69px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 2px;"><img src="./Parallax707_files/3(3).jpg" data-large="images/gallery_img/3.jpg" alt="image03" data-description="A plaintful story from a sistering vale"></a></li>
+                                                <li style="margin-right: 3px; width: 69px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 2px;"><img src="./Parallax707_files/4(2).jpg" data-large="images/gallery_img/4.jpg" alt="image04" data-description="My spirits to attend this double voice accorded"></a></li>
+                                                <li style="margin-right: 3px; width: 69px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 2px;"><img src="./Parallax707_files/5(2).jpg" data-large="images/gallery_img/5.jpg" alt="image05" data-description="And down I laid to list the sad-tuned tale"></a></li>
+                                                <li style="margin-right: 3px; width: 69px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 2px;"><img src="./Parallax707_files/6(2).jpg" data-large="images/gallery_img/6.jpg" alt="image06" data-description="Ere long espied a fickle maid full pale"></a></li>
+                                                <li style="margin-right: 3px; width: 69px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 2px;"><img src="./Parallax707_files/7(2).jpg" data-large="images/gallery_img/7.jpg" alt="image07" data-description="Tearing of papers, breaking rings a-twain"></a></li>
+                                                <li style="margin-right: 3px; width: 69px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 2px;"><img src="./Parallax707_files/8(1).jpg" data-large="images/gallery_img/8.jpg" alt="image08" data-description="Storming her world with sorrow&#39;s wind and rain"></a></li>
+                                                <li style="margin-right: 3px; width: 69px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 2px;"><img src="./Parallax707_files/9(1).jpg" data-large="images/gallery_img/9.jpg" alt="image09" data-description="Upon her head a platted hive of straw"></a></li>
+                                                <li style="margin-right: 3px; width: 69px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 2px;"><img src="./Parallax707_files/10(1).jpg" data-large="images/gallery_img/10.jpg" alt="image10" data-description="Which fortified her visage from the sun"></a></li>
+                                                <li style="margin-right: 3px; width: 69px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 2px;"><img src="./Parallax707_files/11(1).jpg" data-large="images/gallery_img/11.jpg" alt="image11" data-description="Whereon the thought might think sometime it saw"></a></li>
+                                                <li style="margin-right: 3px; width: 69px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 2px;"><img src="./Parallax707_files/12(1).jpg" data-large="images/gallery_img/12.jpg" alt="image12" data-description="The carcass of beauty spent and done"></a></li>
+                                                <li style="margin-right: 3px; width: 69px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 2px;"><img src="./Parallax707_files/13(1).jpg" data-large="images/gallery_img/13.jpg" alt="image13" data-description="Time had not scythed all that youth begun"></a></li>
+                                                <li style="margin-right: 3px; width: 69px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 2px;"><img src="./Parallax707_files/14(1).jpg" data-large="images/gallery_img/14.jpg" alt="image14" data-description="Nor youth all quit; but, spite of heaven&#39;s fell rage"></a></li>
+                                                <li style="margin-right: 3px; width: 69px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 2px;"><img src="./Parallax707_files/15(1).jpg" data-large="images/gallery_img/15.jpg" alt="image15" data-description="Some beauty peep&#39;d through lattice of sear&#39;d age"></a></li>
+                                                <li style="margin-right: 3px; width: 69px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 2px;"><img src="./Parallax707_files/16(1).jpg" data-large="images/gallery_img/16.jpg" alt="image16" data-description="Oft did she heave her napkin to her eyne"></a></li>
+                                                <li style="margin-right: 3px; width: 69px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 2px;"><img src="./Parallax707_files/17(1).jpg" data-large="images/gallery_img/17.jpg" alt="image17" data-description="Which on it had conceited characters"></a></li>
+                                                <li style="margin-right: 3px; width: 69px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 2px;"><img src="./Parallax707_files/18(1).jpg" data-large="images/gallery_img/18.jpg" alt="image18" data-description="Laundering the silken figures in the brine"></a></li>
+                                                <li style="margin-right: 3px; width: 69px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 2px;"><img src="./Parallax707_files/19(1).jpg" data-large="images/gallery_img/19.jpg" alt="image19" data-description="That season&#39;d woe had pelleted in tears"></a></li>
+                                                <li style="margin-right: 3px; width: 69px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 2px;"><img src="./Parallax707_files/20(1).jpg" data-large="images/gallery_img/20.jpg" alt="image20" data-description="And often reading what contents it bears"></a></li>
+                                                <li style="margin-right: 3px; width: 69px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 2px;"><img src="./Parallax707_files/21(1).jpg" data-large="images/gallery_img/21.jpg" alt="image21" data-description="As often shrieking undistinguish&#39;d woe"></a></li>
+                                                <li style="margin-right: 3px; width: 69px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 2px;"><img src="./Parallax707_files/22(1).jpg" data-large="images/gallery_img/22.jpg" alt="image22" data-description="In clamours of all size, both high and low"></a></li>
+                                                <li style="margin-right: 3px; width: 69px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 2px;"><img src="./Parallax707_files/23(1).jpg" data-large="images/gallery_img/23.jpg" alt="image23" data-description="Sometimes her levell&#39;d eyes their carriage ride"></a></li>
+                                                <li style="margin-right: 3px; width: 69px;"><a href="http://www.ortheme.com/wrap/707/#" style="border-width: 2px;"><img src="./Parallax707_files/24(1).jpg" data-large="images/gallery_img/24.jpg" alt="image24" data-description="As they did battery to the spheres intend"></a></li>
+                                            </ul>
+                                                </div>
+                                    <div class="es-nav"><span class="es-nav-prev" style="display: none;">Previous</span><span class="es-nav-next">Next</span></div></div>
+                                            <!-- End Elastislide Carousel Thumbnail Viewer --> 
+                                        </div>
+                                <!-- rg-thumbs --> 
+                            <div class="rg-image-wrapper">           <div class="rg-image-nav">       <a href="http://www.ortheme.com/wrap/707/#" class="rg-image-nav-prev">Previous Image</a>       <a href="http://www.ortheme.com/wrap/707/#" class="rg-image-nav-next">Next Image</a>      </div>          <div class="rg-image"><img src="./Parallax707_files/1(4).jpg"></div>     <div class="rg-loading" style="display: none;"></div>     <div class="rg-caption-wrapper">      <div class="rg-caption" style="">       <p>From off a hill whose concave womb reworded</p>      </div>     </div>    </div></div>
+                                </div>
+                    </div>
+                        </div>
+            </div>
+                </div>
+        <!--#LargeSlider-->
+        <div id="fourth" class="Parallax">
+                    <div class="container clearfix TitleSection">
+                <header class="page-head">
+                            <h1>Twitter Feeds </h1>
+                        </header>
+                <div id="ticker" class="query span8"><p class="loading">loading ...</p></div>
+            </div>
+                </div>
+        <!--#fourth-->
+        <div id="Contact">
+                    <div class="container-fluid clearfix Contact">
+                <div class="container clearfix TitleSection">
+                            <header class="page-head">
+                        <h1>CONTACT Us <small>// LET'S HAVE A DISCUSSION</small></h1>
+                    </header>
+                        </div>
+                <div class="container clearfix">
+                            <div class="container">
+                        <div class="span6">
+                                    <h2>Get In Touch With Us</h2>
+                                    <div class="well GetInTouch">
+                                <form class="form-horizontal" id="registerHere" method="post" action="mailto:someone@example.com" novalidate="novalidate">
+                                            <fieldset>
+                                        <div class="control-group">
+                                                    <label class="control-label" for="Name">Name</label>
+                                                    <div class="controls">
+                                                <input type="text" class="span12" id="user_name" name="user_name">
+                                            </div>
+                                                </div>
+                                        <div class="control-group">
+                                                    <label class="control-label" for="Email">Email</label>
+                                                    <div class="controls">
+                                                <input type="text" class="span12" id="user_email" name="user_email">
+                                            </div>
+                                                </div>
+                                        <div class="control-group">
+                                                    <label class="control-label" for="Subject">Subject</label>
+                                                    <div class="controls">
+                                                <input type="text" class="span12" id="pwd" name="pwd">
+                                            </div>
+                                                </div>
+                                        <div class="control-group">
+                                                    <label class="control-label" for="YourMessage">Your Message</label>
+                                                    <div class="controls">
+                                                <textarea class="span12" id="cpwd" name="cpwd"></textarea>
+                                            </div>
+                                                </div>
+                                        <div class="control-group">
+                                                    <label class="control-label" for="input01"></label>
+                                                    <div class="controls">
+                                                <button type="submit" class="btn" title="Send Message">Send Message</button>
+                                            </div>
+                                                </div>
+                                    </fieldset>
+                                        </form>
+                            </div>
+                                </div>
+                        <div class="span6">
+                                    <h2>Contact Info</h2>
+                                    <div class="well" style="padding-bottom:81px;">
+                                <div class="span12">
+                                            <p style="margin:20px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                                        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+                                        dis parturient montes. <img src="./Parallax707_files/contact.jpg" alt="contact img" style="margin:30px 0;border: 3px solid #F96E5B;"> </p>
+                                        </div>
+                                <hr>
+                                <div class="contact-info">
+                                            <ul>
+                                        <li> <i class="icon-globe"></i>Lorem ipsum dolor</li>
+                                        <li> <i class="icon-bullhorn"></i>+(20) (0) 491.27.29</li>
+                                        <li> <i class="icon-envelope"></i> <a href="mailto:ahmedeabbas@yahoo.com">Some@yahoo.com</a> </li>
+                                        <li> <i class="icon-map-marker"></i>Lorem ipsum dolor
+                                                    consectetuer adipiscing elit.</li>
+                                    </ul>
+                                        </div>
+                            </div>
+                                </div>
+                    </div>
+                        </div>
+                <div class="container-fluid">
+                            <div class="span12" style="margin-top:20px">
+                        <iframe width="100%" height="374" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="./Parallax707_files/maps.html"></iframe>
+                        <br>
+                    </div>
+                        </div>
+            </div>
+                </div>
+        <!--#Contact-->
+        <div id="fifth" class="Parallax">
+                    <div class="ParallaxText">
+                <h2>WORD <span>OF</span> THE <span>WISE</span></h2>
+                <div class="clearfix"></div>
+                <blockquote>A man must be big enough to admit his mistakes, smart enough to profit
+                            from them, and strong enough to correct them.</blockquote>
+                <div class="clearfix"></div>
+                <p>- Jason Adams -</p>
+            </div>
+                </div>
+        <!--#fifth-->
+        <div class="container-fluid Footer">
+                    <div class="container">
+                <footer>
+                            <ul class="Social">
+                        <li> <a rel="tooltip" class="Rss" href="http://www.ortheme.com/wrap/707/#" data-placement="top" data-original-title="RSS">Rss</a> </li>
+                        <li> <a class="Facebook" rel="tooltip" href="http://www.ortheme.com/wrap/707/#" data-original-title="Facebook">Facebook</a> </li>
+                        <li> <a class="Twitter" rel="tooltip" href="http://www.ortheme.com/wrap/707/#" data-original-title="Twitter">Twitter</a> </li>
+                        <li> <a class="Dribbble" rel="tooltip" href="http://www.ortheme.com/wrap/707/#" data-original-title="Dribbble">Dribbble</a> </li>
+                        <li> <a class="YouTube" rel="tooltip" href="http://www.ortheme.com/wrap/707/#" data-original-title="YouTube">YouTube</a> </li>
+                        <li> <a class="Behance" rel="tooltip" href="http://www.ortheme.com/wrap/707/#" data-original-title="Behance">Behance</a> </li>
+                        <li> <a class="Deviantart" rel="tooltip" href="http://www.ortheme.com/wrap/707/#" data-original-title="Deviantart">Deviantart</a> </li>
+                        <li> <a class="Wordpress" rel="tooltip" href="http://www.ortheme.com/wrap/707/#" data-original-title="Wordpress">Wordpress</a> </li>
+                        <li> <a class="Picasa" rel="tooltip" href="http://www.ortheme.com/wrap/707/#" data-original-title="Picasa">Picasa</a> </li>
+                    </ul>
+                            <a href="http://www.ortheme.com/wrap/707/#welcome" class="brand">Parallax<span>707</span> </a>
+                            <p>All rights reserved. Theme by © <a href="mailto:ahmedeabbas@yahoo.com">Coyier</a> </p>
+                        </footer>
+            </div>
+                </div>
+    </div>
+            <!-- /Row --> 
+        </div>
+<!-- /container -->
+<div id="toTop">To Top</div>
+<!-- Le javascript==================================================--> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="./Parallax707_files/jquery-1.8.2.min.js"></script> 
+<script src="./Parallax707_files/lean-slider.min.js"></script><!-- Services Slider--> 
+<script src="./Parallax707_files/jquery.sticky.min.js"></script><!-- sticky Nav--> 
+<script src="./Parallax707_files/my_script.min.js"></script> 
+<script src="./Parallax707_files/bootstrap.min.js"></script> 
+<script src="./Parallax707_files/jquery.easing.1.3.min.js"></script><!-- parallax--> 
+<script src="./Parallax707_files/modernizr-2.6.1.min.js"></script><!--blur slidShow --> 
+<script src="./Parallax707_files/jquery.validate.min.js"></script> 
+<script src="./Parallax707_files/jquery.parallax-1.1.3.min.js"></script><!--  parallax--> 
+<script src="./Parallax707_files/jquery.localscroll-1.2.7-min.js"></script><!--  parallax--> 
+<script type="text/javascript" src="./Parallax707_files/jquery.tmpl.min.js"></script><!--grid slidShow --><!-- &Services Gallery--> 
+<script type="text/javascript" src="./Parallax707_files/jquery.kinetic.min.js"></script><!--grid slidShow --> 
+<script type="text/javascript" src="./Parallax707_files/jquery.iconmenu.min.js"></script><!--Services  Blocks--> 
+<script type="text/javascript" src="./Parallax707_files/jquery-hover-effect.min.js"></script><!--PortfolioGallery--> 
+<script src="./Parallax707_files/jquery.classybox.min.js"></script><!--jquery-classybox LightBox--> 
+<script src="./Parallax707_files/jwplayer.js"></script><!--jquery-classybox LightBox--> 
+<script src="./Parallax707_files/jwplayer.html5.js"></script><!--jquery-classybox LightBox--> 
+<script type="text/javascript" src="./Parallax707_files/jquery.elastislide.min.js"></script><!-- Gallery Section--> 
+<script type="text/javascript" src="./Parallax707_files/gallery.min.js"></script><!-- Gallery Section--> 
+<script type="text/javascript" src="./Parallax707_files/jquery.tweet.min.js"></script><!--Tweet ticker--> 
+
+<!--jquery-classybox LightBox--> 
+<script>
+        $(".lightbox span.zoom a").ClassyBox({
+        widthWindow:  900
+        });  
+       	</script>
+
+</body></html>
